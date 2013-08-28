@@ -7,4 +7,11 @@ Jesús Fernando Alvarez Franco
 
 CHANGELOG
 
-V0.1 - Added main screen
+===August 28th, 2013===
+-Added Splash Screen (Need an image to work)
+-Added BitmapHack Class
+-Added ActivityUtils Class
+
+== August 27th, 2013 ===
+- Added main screen
+-Added to Github
