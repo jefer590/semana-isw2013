@@ -1,0 +1,10 @@
+SEMANA ISW 2013 ANROID APP OPEN SOURCE
+
+MADE BY ITSON MOBILE
+
+Developers:
+Jesús Fernando Alvarez Franco
+
+CHANGELOG
+
+V0.1 - Added main screen
