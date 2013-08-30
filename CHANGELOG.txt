@@ -7,6 +7,13 @@ Jesús Fernando Alvarez Franco
 
 CHANGELOG
 
+===August 29th, 2013===
+-Added Image for Splash Screen
+-Splash Screen now Starts Correctly
+-Added Conference and Workshop Classes
+-Started Development of Conference Addon
+-Added Conference View(still under development)
+
 ===August 28th, 2013===
 -Added Splash Screen (Need an image to work)
 -Added BitmapHack Class

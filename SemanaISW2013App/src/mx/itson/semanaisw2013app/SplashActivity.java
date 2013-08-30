@@ -28,7 +28,7 @@ public class SplashActivity extends SherlockActivity{
 		
 		//Hack the bitmap
 		Bitmap bitmap = BitmapHack.decodeSampledBitmapFromResource(getResources(), 
-				R.drawable.AQUIVANOMBREDELOGO, size[0], size[1]);
+				R.drawable.semana_isw_logo, size[0], size[1]);
 		
 		//Set the source for the imageview
 		imageView.setImageBitmap(bitmap);
