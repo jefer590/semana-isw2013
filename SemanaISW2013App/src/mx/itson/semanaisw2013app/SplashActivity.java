@@ -3,6 +3,7 @@ package mx.itson.semanaisw2013app;
 import mx.itson.semanaisw2013app.utils.ActivityUtils;
 import mx.itson.semanaisw2013app.utils.BitmapHack;
 import android.content.Intent;
+
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;

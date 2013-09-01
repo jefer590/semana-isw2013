@@ -17,6 +17,7 @@
             android:name="mx.itson.semanaisw2013app.MainActivity"
             android:label="@string/app_name" >
         </activity>
+        
         <activity android:name="mx.itson.semanaisw2013app.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +25,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
-            android:name="mx.itson.semanaisw2013app.ConferenceView"
-            android:label="@string/title_activity_conference_view" >
+            android:name="mx.itson.semanaisw2013app.ConferenceActivity"
+            android:label="@string/title_activity_conference_activity" 
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName="mx.itson.semanaisw2013app.MainActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.itson.semanaisw2013app.MainActivity"/>
         </activity>
     </application>
 
