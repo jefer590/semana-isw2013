@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NavUtils;
+import android.widget.Toast;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.ActionBar.Tab;
@@ -24,6 +25,13 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 		setUpActionBar();
 	}
 	
+	@Override
+	public void onBackPressed() {
+		//Nothing bro, you can't use back in my app.
+		Toast.makeText(getApplicationContext(), "No puedes usar esa opción aquí!", Toast.LENGTH_SHORT).show();
+	}
+	
+	@SuppressWarnings("static-access")
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	private void setUpActionBar() {
 		ActionBar actionbar = getSupportActionBar();
@@ -33,11 +41,13 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 		actionbar.setNavigationMode(actionbar.NAVIGATION_MODE_TABS);
 		
 		actionbar.addTab(actionbar.newTab().setText("L 07/10")
-				.setTabListener(new TabListener(getConferences(R.array.monday), "Lunes")));
+				.setTabListener(new TabListener(getConferences(R.array.monday_conferences), "Lunes")));
+
+		actionbar.addTab(actionbar.newTab().setText("Ma 08/10")
+				.setTabListener(new TabListener(getConferences(R.array.tuesday_conferences), "Martes")));
 		
-		//actionbar.addTab(actionbar.newTab().setText("L 08/10")
-		//		.setTabListener(new TabListener(getConferences(R.array.tuesday), "Martes")));
-		
+		actionbar.addTab(actionbar.newTab().setText("Mi 09/10")
+				.setTabListener(new TabListener(getConferences(R.array.wednesday_conferences), "Miercoles")));
 	}
 	
 	public ArrayList<Conference> getConferences(int dayResource){
@@ -53,8 +63,11 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 		String[] summaries = res.getStringArray(dayResources.getResourceId(4, 0));
 		TypedArray images = res.obtainTypedArray(dayResources.getResourceId(5, 0));
 		
+		//Variable for array length
+		int arrayLength = names.length;
+		
 		//Everyone must have the same length
-		for(int i = 0; i<names.length; i++){
+		for(int i = 0; i<arrayLength; i++){
 			c.add(new Conference(names[i], speakers[i], locations[i], dates[i], summaries[i], images.getResourceId(i, 0)));
 		}
 		
@@ -112,8 +125,8 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 		}
 
 		@Override
-		public void onTabReselected(Tab tab, FragmentTransaction ft) {
-			//Nothing, shut up
+		public void onTabReselected(Tab tab, FragmentTransaction ft) throws UnsupportedOperationException{
+			
 		}
 		
 		

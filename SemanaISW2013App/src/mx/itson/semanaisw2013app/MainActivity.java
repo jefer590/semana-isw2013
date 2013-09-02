@@ -1,15 +1,16 @@
 package mx.itson.semanaisw2013app;
 
+import mx.itson.semanaisw2013app.utils.ActivityUtils;
 import mx.itson.semanaisw2013app.utils.BitmapHack;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.view.Menu;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -31,6 +32,12 @@ public class MainActivity extends SherlockActivity {
 	private void setImageViews(){
 		ImageButton button_conferences = (ImageButton) findViewById(R.id.main_button_conferencias);
 	
+		//We put the image in the button
+		//ALL IMAGES MUST HAVE WIDTH:150 AND HEIGHT: 150
+		Bitmap bitmap = BitmapHack.decodeSampledBitmapFromResource(getResources(), R.drawable.conference_image,
+				300, 150);
+		setBackgroundImageButton(button_conferences, bitmap);
+		
 		button_conferences.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -39,5 +46,10 @@ public class MainActivity extends SherlockActivity {
 				startActivity(intent);
 			}
 		});
+	}
+	
+	private void setBackgroundImageButton(ImageButton imageButton, Bitmap bitmap){
+		Drawable background_Drawable = new BitmapDrawable(getResources(), bitmap);
+		ActivityUtils.setBackground(imageButton, background_Drawable);
 	}
 }

@@ -20,13 +20,15 @@ import com.actionbarsherlock.app.SherlockFragment;
 
 public class ConferencesPagerFragment extends SherlockFragment{
 	
+	private static final String[] PARCELABLE_KEYS = {"conferences", "conference"};
+	
 	public static ConferencesPagerFragment newInstance(ArrayList<Conference> conferences){
-		ConferencesPagerFragment c = new ConferencesPagerFragment();
+		ConferencesPagerFragment conferences_pager_fragment = new ConferencesPagerFragment();
 		Bundle args = new Bundle();
-		args.putParcelableArrayList("conferences", conferences);
-		c.setArguments(args);
+		args.putParcelableArrayList(PARCELABLE_KEYS[0], conferences);
+		conferences_pager_fragment.setArguments(args);
 		
-		return c;
+		return conferences_pager_fragment;
 	}
 	
 	@Override
@@ -34,7 +36,7 @@ public class ConferencesPagerFragment extends SherlockFragment{
 		ViewPager pager = new ViewPager(getActivity());
 		pager.setId(0xFace);
 		
-		ArrayList<Conference> conferences = getArguments().getParcelableArrayList("coferences");
+		ArrayList<Conference> conferences = getArguments().getParcelableArrayList(PARCELABLE_KEYS[0]);
 		pager.setAdapter(new ConferenceAdapter(getChildFragmentManager(), conferences));
 		
 		return pager;
@@ -51,52 +53,50 @@ public class ConferencesPagerFragment extends SherlockFragment{
 		private Conference mConference;
 		
 		public static ConferenceFragment newInstance(Conference conference){
-			ConferenceFragment z = new ConferenceFragment();
+			ConferenceFragment conferenceFragment = new ConferenceFragment();
 			
 			Bundle args = new Bundle();
-			args.putParcelable("conferences", conference);
-			z.setArguments(args);
+			args.putParcelable(PARCELABLE_KEYS[1], conference);
+			conferenceFragment.setArguments(args);
 			
-			return z;
+			return conferenceFragment;
 		}
 		
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-			View v = inflater.inflate(R.layout.conference_view, container, false);
+			View view = inflater.inflate(R.layout.conference_view, container, false);
 			
-			mImage = (ImageView) v.findViewById(R.id.image);
-			mName = (TextView) v.findViewById(R.id.name);
-			mSpeaker = (TextView) v.findViewById(R.id.speaker);
-			mLocation = (TextView) v.findViewById(R.id.location);
-			mDate = (TextView) v.findViewById(R.id.date);
-			mSummary = (TextView) v.findViewById(R.id.summary);
+			mImage = (ImageView) view.findViewById(R.id.image);
+			mName = (TextView) view.findViewById(R.id.name);
+			mSpeaker = (TextView) view.findViewById(R.id.speaker);
+			mLocation = (TextView) view.findViewById(R.id.location);
+			mDate = (TextView) view.findViewById(R.id.date);
+			mSummary = (TextView) view.findViewById(R.id.summary);
 			
 			if(android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.GINGERBREAD_MR1){
-				v.findViewById(R.id.scroll).setBackgroundColor(Color.WHITE);
+				view.findViewById(R.id.scroll).setBackgroundColor(Color.WHITE);
 				mName.setTextColor(Color.BLACK);
 				mSpeaker.setTextColor(Color.BLACK);
 				mLocation.setTextColor(Color.BLACK);
 				mDate.setTextColor(Color.BLACK);
 				mSummary.setTextColor(Color.BLACK);
-			} else {
-				//HOLO THEME DO THE WORK :)
 			}
 			
-			return v;
+			return view;
 		}
 		
 		@Override
 		public void onActivityCreated(Bundle savedInstanceState) {
 			super.onActivityCreated(savedInstanceState);
 			
-			mConference = (Conference) getArguments().getParcelable("conference");
+			mConference = (Conference) getArguments().getParcelable(PARCELABLE_KEYS[1]);
 			
 			mImage.setImageResource(mConference.getImage());
 			mName.setText(mConference.getName());
 			mSpeaker.setText(mConference.getSpeaker());
 			mLocation.setText(mConference.getLocation());
 			mDate.setText(mConference.getDate());
-			mSummary.setText(mConference.getSummary());
+			mSummary.setText(Html.fromHtml(mConference.getSummary()));
 		}
 	}//Class Fragment Finished
 	
