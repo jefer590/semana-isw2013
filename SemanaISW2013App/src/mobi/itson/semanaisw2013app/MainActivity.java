@@ -1,7 +1,7 @@
-package mx.itson.semanaisw2013app;
+package mobi.itson.semanaisw2013app;
 
-import mx.itson.semanaisw2013app.utils.ActivityUtils;
-import mx.itson.semanaisw2013app.utils.BitmapHack;
+import mobi.itson.semanaisw2013app.utils.ActivityUtils;
+import mobi.itson.semanaisw2013app.utils.BitmapHack;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;

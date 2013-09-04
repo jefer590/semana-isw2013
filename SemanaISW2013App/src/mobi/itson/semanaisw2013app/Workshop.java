@@ -1,4 +1,4 @@
-package mx.itson.semanaisw2013app;
+package mobi.itson.semanaisw2013app;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -7,11 +7,11 @@ public class Workshop implements Parcelable{
 
 	private String name;
 	private String instructor;
-	private String summary;
 	private String requirements;
 	private String date;
 	private String classroom;
-	private int duration;
+	private String summary;
+	private String duration;
 	private int image;
 	
 	public Workshop(){
@@ -19,7 +19,7 @@ public class Workshop implements Parcelable{
 	}
 	
 	public Workshop(String name, String instructor, String summary,
-			String requirements, String date, String classroom, int duration, int image) {
+			String requirements, String date, String classroom, String duration, int image) {
 		super();
 		this.name = name;
 		this.instructor = instructor;
@@ -81,11 +81,11 @@ public class Workshop implements Parcelable{
 		this.classroom = classroom;
 	}
 	
-	public int getDuration() {
+	public String getDuration() {
 		return duration;
 	}
 
-	public void setDuration(int duration) {
+	public void setDuration(String duration) {
 		this.duration = duration;
 	}
 
@@ -110,7 +110,7 @@ public class Workshop implements Parcelable{
 		dest.writeString(requirements);
 		dest.writeString(date);
 		dest.writeString(classroom);
-		dest.writeInt(duration);
+		dest.writeString(duration);
 		dest.writeInt(image);
 	}
 

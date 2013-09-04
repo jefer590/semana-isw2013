@@ -1,4 +1,4 @@
-package mx.itson.semanaisw2013app;
+package mobi.itson.semanaisw2013app;
 
 import java.util.ArrayList;
 
@@ -28,7 +28,7 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 	@Override
 	public void onBackPressed() {
 		//Nothing bro, you can't use back in my app.
-		Toast.makeText(getApplicationContext(), "No puedes usar esa opción aquí!", Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(), getString(R.string.back_button_danger), Toast.LENGTH_SHORT).show();
 	}
 	
 	@SuppressWarnings("static-access")

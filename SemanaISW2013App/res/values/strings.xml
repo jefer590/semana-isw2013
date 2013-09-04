@@ -5,162 +5,151 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="empty"></string>
+    <string name="back_button_danger">¡Tu no puedes hacer eso aquí!</string>
     <string name="title_activity_conference_activity">Conferencias</string>
-    
+    <string name="title_activity_workshop_activity">Talleres</string>
+
     <string-array name="monday_conferences_names">
         <item>Inauguración</item>
         <item>TEMAPORDEFINIR</item>
         <item>TEMAPORDEFINIR</item>
         <item>TEMAPORDEFINIR</item>
     </string-array>
-    
     <string-array name="monday_conferences_speakers">
         <item>SEMANA ISW 2013</item>
         <item>Manuel Montaño</item>
         <item>Roberto Limón Uloa</item>
         <item>Luis Adrian Macías</item>
     </string-array>
-    
     <string-array name="monday_conferences_locations">
         <item>Cd. Obregón, Sonora</item>
         <item>Novutek</item>
         <item>ITSON Guaymas</item>
         <item>ITSON Naínari</item>
     </string-array>
-    
     <string-array name="monday_conferences_dates">
         <item>9:00 &#8211; 10:00</item>
         <item>10:00 &#8211; 11:00</item>
         <item>11:00 &#8211; 11:20</item>
         <item>13:00 &#8211; 14:00</item>
     </string-array>
-    
     <string-array name="monday_conferences_summaries">
         <item>
- 			<![CDATA[
+		<![CDATA[
                 <p align="justify">Prueba</p>
             ]]>
         </item>
         <item>
-            <![CDATA[
+		<![CDATA[
             	<p aling="justify"> POR DEFINIR </p>
             ]]>
         </item>
         <item>
-            <![CDATA[
+		<![CDATA[
             	<p aling="justify"> POR DEFINIR</p>
             ]]>
         </item>
         <item>
-            <![CDATA[
+		<![CDATA[
             	<p aling="justify"> POR DEFINIR</p>
             ]]>
         </item>
     </string-array>
-    
+
     <array name="monday_conferences_images">
         <item>@drawable/semana_isw_logo</item>
         <item>@drawable/manuel_montanio</item>
         <item>@drawable/semana_isw_logo</item>
         <item>@drawable/semana_isw_logo</item>
     </array>
-  
+
     <string-array name="tuesday_conferences_names">
         <item>Redes Sociales</item>
         <item>Diseño Responsivo</item>
         <item>POR DEFINIR</item>
     </string-array>
-    
     <string-array name="tuesday_conferences_speakers">
         <item>Jorge Pistola</item>
         <item>Axel Valdez</item>
         <item>POR DEFINIR</item>
     </string-array>
-    
     <string-array name="tuesday_conferences_locations">
         <item>Nearsoft</item>
         <item>Nearsoft</item>
         <item>Nearsoft</item>
     </string-array>
-    
     <string-array name="tuesday_conferences_dates">
         <item>10:00 &#8211; 11:00</item>
         <item>11:00 &#8211; 11:20</item>
         <item>13:00 &#8211; 14:00</item>
     </string-array>
-    
     <string-array name="tuesday_conferences_summaries">
         <item>
-  			<![CDATA[
+		<![CDATA[
                 <p align="justify">PORDEFINIR</p>
             ]]>
         </item>
         <item>
-			<![CDATA[
+		<![CDATA[
             	<p aling="justidy">PORDEFINIR</p>
             ]]>
         </item>
         <item>
-            <![CDATA[
+		<![CDATA[
             	<p aling="justidy">PORDEFINIR</p>
             ]]>
         </item>
     </string-array>
-    
+
     <array name="tuesday_conferences_images">
         <item>@drawable/jorge_pistola</item>
         <item>@drawable/axel_valdez</item>
         <item>@drawable/semana_isw_logo</item>
     </array>
-    
+
     <string-array name="wednesday_conferences_names">
         <item>POR DEFINIR</item>
         <item>Panel de Egresados de ISW</item>
         <item>POR DEFINIR</item>
     </string-array>
-    
     <string-array name="wednesday_conferences_speakers">
         <item>POR DEFINIR</item>
         <item>Moderador: Elsa Padilla</item>
         <item>Luis Felipe</item>
     </string-array>
-    
     <string-array name="wednesday_conferences_locations">
         <item>ASPTICS</item>
         <item>Cd. Obregón, Sonora</item>
         <item>ITSON NAÍNARI</item>
     </string-array>
-    
     <string-array name="wednesday_conferences_dates">
         <item>10:00 &#8211; 11:00</item>
         <item>11:00 &#8211; 11:20</item>
         <item>13:00 &#8211; 14:00</item>
     </string-array>
-    
     <string-array name="wednesday_conferences_summaries">
         <item>
-  			<![CDATA[
+		<![CDATA[
                 <p align="justify">PORDEFINIR</p>
             ]]>
         </item>
         <item>
-			<![CDATA[
+		<![CDATA[
             	<p aling="justidy">PORDEFINIR</p>
             ]]>
         </item>
         <item>
-            <![CDATA[
+		<![CDATA[
             	<p aling="justidy">PORDEFINIR</p>
             ]]>
         </item>
     </string-array>
-    
+
     <array name="wednesday_conferences_images">
         <item>@drawable/semana_isw_logo</item>
         <item>@drawable/semana_isw_logo</item>
         <item>@drawable/semana_isw_logo</item>
     </array>
-    
     <array name="monday_conferences">
         <item>@array/monday_conferences_names</item>
         <item>@array/monday_conferences_speakers</item>
@@ -169,23 +158,21 @@
         <item>@array/monday_conferences_summaries</item>
         <item>@array/monday_conferences_images</item>
     </array>
-    
     <array name="tuesday_conferences">
         <item>@array/tuesday_conferences_names</item>
         <item>@array/tuesday_conferences_speakers</item>
         <item>@array/tuesday_conferences_locations</item>
         <item>@array/tuesday_conferences_dates</item>
         <item>@array/tuesday_conferences_summaries</item>
-        <item>@array/tuesday_conferences_images</item>  
+        <item>@array/tuesday_conferences_images</item>
     </array>
-    
     <array name="wednesday_conferences">
         <item>@array/wednesday_conferences_names</item>
         <item>@array/wednesday_conferences_speakers</item>
         <item>@array/wednesday_conferences_locations</item>
         <item>@array/wednesday_conferences_dates</item>
         <item>@array/wednesday_conferences_summaries</item>
-        <item>@array/wednesday_conferences_images</item>   
+        <item>@array/wednesday_conferences_images</item>
     </array>
     
 </resources>

@@ -1,4 +1,4 @@
-package mx.itson.semanaisw2013app.utils;
+package mobi.itson.semanaisw2013app.utils;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;

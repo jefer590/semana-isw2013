@@ -1,4 +1,4 @@
-package mx.itson.semanaisw2013app;
+package mobi.itson.semanaisw2013app;
 
 import android.os.Parcel;
 import android.os.Parcelable;

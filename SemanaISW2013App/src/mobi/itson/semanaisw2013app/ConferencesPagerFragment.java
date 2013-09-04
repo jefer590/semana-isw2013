@@ -1,7 +1,8 @@
-package mx.itson.semanaisw2013app;
+package mobi.itson.semanaisw2013app;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,7 +16,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockFragment;
-
 
 
 public class ConferencesPagerFragment extends SherlockFragment{
@@ -74,7 +74,7 @@ public class ConferencesPagerFragment extends SherlockFragment{
 			mSummary = (TextView) view.findViewById(R.id.summary);
 			
 			if(android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.GINGERBREAD_MR1){
-				view.findViewById(R.id.scroll).setBackgroundColor(Color.WHITE);
+				view.findViewById(R.id.scrollConference).setBackgroundColor(Color.WHITE);
 				mName.setTextColor(Color.BLACK);
 				mSpeaker.setTextColor(Color.BLACK);
 				mLocation.setTextColor(Color.BLACK);
@@ -104,15 +104,15 @@ public class ConferencesPagerFragment extends SherlockFragment{
 
 		private List<ConferenceFragment> fragments = new ArrayList<ConferenceFragment>();
 
-		public ConferenceAdapter(FragmentManager fm, List<Conference> conferences){
-			super(fm);
+		public ConferenceAdapter(FragmentManager fragmentManager, List<Conference> conferences){
+			super(fragmentManager);
 			init(conferences);
 		}
 		
 		private void init(List<Conference> conferences){
 			for(Conference conference : conferences){
-				ConferenceFragment cf = ConferenceFragment.newInstance(conference);
-				fragments.add(cf);
+				ConferenceFragment conference_fragment = ConferenceFragment.newInstance(conference);
+				fragments.add(conference_fragment);
 			}
 		}
 		
@@ -127,6 +127,6 @@ public class ConferencesPagerFragment extends SherlockFragment{
 		}
 		
 		
-	}
+	}//adapter Class Finished
 	
 }//OP Class finished
