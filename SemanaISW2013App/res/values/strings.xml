@@ -8,6 +8,7 @@
     <string name="back_button_danger">¡Tu no puedes hacer eso aquí!</string>
     <string name="title_activity_conference_activity">Conferencias</string>
     <string name="title_activity_workshop_activity">Talleres</string>
+    <string name="title_activity_Web_register_view_activiy">Registrarse al Evento</string>
 
     <string-array name="monday_conferences_names">
         <item>Inauguración</item>
@@ -91,12 +92,12 @@
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justidy">PORDEFINIR</p>
+            	<p aling="justify">PORDEFINIR</p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justidy">PORDEFINIR</p>
+            	<p aling="justify">PORDEFINIR</p>
             ]]>
         </item>
     </string-array>
@@ -135,12 +136,12 @@
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justidy">PORDEFINIR</p>
+            	<p aling="justify">PORDEFINIR</p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justidy">PORDEFINIR</p>
+            	<p aling="justify">PORDEFINIR</p>
             ]]>
         </item>
     </string-array>
@@ -150,6 +151,43 @@
         <item>@drawable/semana_isw_logo</item>
         <item>@drawable/semana_isw_logo</item>
     </array>
+    
+    <string-array name="workshops_names">
+        <item>PRUEBA NOMBRES</item>
+    </string-array>
+    
+    <string-array name="workshops_instructors">
+        <item>PRUEBA INSTRUCTORES</item>
+    </string-array>
+    
+    <string-array name="workshops_requirements">
+        <item>PRUEBA REQUISITOS</item>
+    </string-array>
+    
+    <string-array name="workshops_dates">
+        <item>PRUEBA FECHAS</item>
+    </string-array>
+    
+    <string-array name="workshops_classrooms">
+        <item>PRUEBA SALON DE CLASES</item>
+    </string-array>
+    
+    <string-array name="workshops_summaries">
+        <item>
+            <![CDATA[
+            	<p aling="justify">PRUEBA SUMMARY</p>
+            ]]>
+        </item>
+    </string-array>
+    
+    <string-array name="workshops_durations">
+        <item>PRUEBA DURACION</item>
+    </string-array>
+        
+    <array name="workshops_images">
+        <item>@drawable/semana_isw_logo</item>
+    </array>
+    
     <array name="monday_conferences">
         <item>@array/monday_conferences_names</item>
         <item>@array/monday_conferences_speakers</item>
@@ -175,4 +213,14 @@
         <item>@array/wednesday_conferences_images</item>
     </array>
     
+    <array name="workshops">
+        <item>@array/workshops_names</item>
+        <item>@array/workshops_instructors</item>
+        <item>@array/workshops_requirements</item>
+        <item>@array/workshops_dates</item>
+        <item>@array/workshops_classrooms</item>
+        <item>@array/workshops_summaries</item>
+        <item>@array/workshops_durations</item>
+        <item>@array/workshops_images</item>
+    </array>
 </resources>

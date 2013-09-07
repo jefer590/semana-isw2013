@@ -123,18 +123,45 @@
 	        android:textColor="#FFFFFF"
 	        android:textSize="18dp"/>
 	    
+	    <ImageButton 
+	        android:id="@+id/main_button_register"
+	        android:layout_width="350dp"
+	        android:layout_height="150dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignLeft="@+id/main_button_semanaisw2013"
+	        android:layout_below="@+id/main_button_semanaisw2013"
+	        android:text="@string/empty"
+	        android:contentDescription="@string/empty"/>
+	    
+	    <TextView 
+	        android:id="@+id/TVRegister"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="#88000000"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="10dp"
+	        android:layout_alignBottom="@+id/main_button_register"
+	        android:layout_alignLeft="@+id/main_button_register"
+	       	android:layout_alignRight="@+id/main_button_register"
+	       	android:paddingTop="5dp"
+	       	android:drawableRight="@android:drawable/star_on"
+	       	android:gravity="center_vertical"
+	       	android:text="REGISTRATE"
+	       	android:textColor="#FFFFFF"
+	       	android:textSize="18dp"/>"
+	    
 	    <ImageButton
 	        android:id="@+id/main_button_itson"
 	        android:layout_width="350dp"
 	        android:layout_height="150dp"
 	        android:background="#33B5E5"
 	        android:layout_marginTop="10dp"
-	        android:layout_alignLeft="@+id/main_button_conferencias"
-	        android:layout_below="@+id/main_button_semanaisw2013"
+	        android:layout_alignLeft="@+id/main_button_register"
+	        android:layout_below="@+id/main_button_register"
 	        android:text="@string/empty"
 	        android:contentDescription="@string/empty"
 	        />
-	
+	    
 	    <TextView
 	        android:id="@+id/textView3"
 	        android:layout_width="wrap_content"

@@ -51,7 +51,7 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 	}
 	
 	public ArrayList<Conference> getConferences(int dayResource){
-		ArrayList<Conference> c = new ArrayList<Conference>();
+		ArrayList<Conference> conferences = new ArrayList<Conference>();
 		Resources res = getResources();
 		
 		TypedArray dayResources = res.obtainTypedArray(dayResource);
@@ -68,13 +68,13 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 		
 		//Everyone must have the same length
 		for(int i = 0; i<arrayLength; i++){
-			c.add(new Conference(names[i], speakers[i], locations[i], dates[i], summaries[i], images.getResourceId(i, 0)));
+			conferences.add(new Conference(names[i], speakers[i], locations[i], dates[i], summaries[i], images.getResourceId(i, 0)));
 		}
 		
 		images.recycle();
 		dayResources.recycle();
 		
-		return c;
+		return conferences;
 	}
 	
 	@Override

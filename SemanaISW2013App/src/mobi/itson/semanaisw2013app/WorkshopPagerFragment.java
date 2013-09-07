@@ -78,7 +78,7 @@ public class WorkshopPagerFragment extends SherlockFragment{
 			mDurationW = (TextView) view.findViewById(R.id.durationW);
 			
 			if(android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.GINGERBREAD_MR1){
-				view.findViewById(R.id.scrollWorkshop).setBackgroundColor(Color.BLACK);
+				view.findViewById(R.id.scrollWorkshop).setBackgroundColor(Color.WHITE);
 				mNameW.setTextColor(Color.BLACK);
 				mInstructorW.setTextColor(Color.BLACK);
 				mRequirementsW.setTextColor(Color.BLACK);

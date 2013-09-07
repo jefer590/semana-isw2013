@@ -4,6 +4,8 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
@@ -38,6 +40,14 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_workshop_activity"
             android:parentActivityName="mobi.itson.semanaisw2013app.MainActivity" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.itson.semanaisw2013app.MainActivity"/>
+        </activity>
+        <activity 
+            android:name="mobi.itson.semanaisw2013app.WebView_Register_Actvity"
+            android:label="@string/title_activity_Web_register_view_activiy"
+            android:parentActivityName="mobi.itson.semanaisw2013app.MainActivity">
             <meta-data 
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="mobi.itson.semanaisw2013app.MainActivity"/>

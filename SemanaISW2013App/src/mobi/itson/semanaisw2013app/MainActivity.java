@@ -31,18 +31,44 @@ public class MainActivity extends SherlockActivity {
 	
 	private void setImageViews(){
 		ImageButton button_conferences = (ImageButton) findViewById(R.id.main_button_conferencias);
-	
-		//We put the image in the button
-		//ALL IMAGES MUST HAVE WIDTH:150 AND HEIGHT: 150
-		Bitmap bitmap = BitmapHack.decodeSampledBitmapFromResource(getResources(), R.drawable.conference_image,
-				300, 150);
-		setBackgroundImageButton(button_conferences, bitmap);
+		ImageButton button_workshops = (ImageButton) findViewById(R.id.main_button_talleres);
+		ImageButton button_register = (ImageButton) findViewById(R.id.main_button_register);
 		
-		button_conferences.setOnClickListener(new View.OnClickListener() {
-			
+		//We put the image in the button
+		//ALL IMAGES MUST HAVE WIDTH:300 AND HEIGHT: 150
+		//CONFERENCES
+		Bitmap bitmap_conference_button = BitmapHack.decodeSampledBitmapFromResource(getResources(),
+				R.drawable.conference_image, 300, 150);
+		setBackgroundImageButton(button_conferences, bitmap_conference_button);
+		
+		button_conferences.setOnClickListener(new View.OnClickListener() {		
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(getApplicationContext(),ConferenceActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		//WORKSHOPS
+		Bitmap bitmap_workshop_button = BitmapHack.decodeSampledBitmapFromResource(getResources(),
+				R.drawable.workshop_image, 300, 150);
+		setBackgroundImageButton(button_workshops, bitmap_workshop_button);
+		
+		button_workshops.setOnClickListener(new View.OnClickListener() {		
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getApplicationContext(), WorkshopActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		//REGISTER
+		
+		button_register.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getApplicationContext(), WebView_Register_Actvity.class);
 				startActivity(intent);
 			}
 		});
