@@ -9,18 +9,21 @@
     <string name="title_activity_conference_activity">Conferencias</string>
     <string name="title_activity_workshop_activity">Talleres</string>
     <string name="title_activity_Web_register_view_activiy">Registrarse al Evento</string>
-
+	<string name="title_activity_about_us">ITSON Mobile</string>
+    <string name="title_activity_schedule">Horario</string>
+	<string name="title_activity_gallery">#SEMANAISW2013</string>
+    
     <string-array name="monday_conferences_names">
         <item>Inauguración</item>
-        <item>TEMAPORDEFINIR</item>
-        <item>TEMAPORDEFINIR</item>
-        <item>TEMAPORDEFINIR</item>
+        <item>5 Ingredientes para convertirte en un verdadero Ingeniero en Software</item>
+        <item>Yo.IngenieroEnSoftware.Stack();</item>
+        <item>¿Las máquinas entienden nuestro comportamiento?</item>
     </string-array>
     <string-array name="monday_conferences_speakers">
         <item>SEMANA ISW 2013</item>
         <item>Manuel Montaño</item>
         <item>Roberto Limón Uloa</item>
-        <item>Luis Adrian Macías</item>
+        <item>Luis Adrián Castro</item>
     </string-array>
     <string-array name="monday_conferences_locations">
         <item>Cd. Obregón, Sonora</item>
@@ -37,42 +40,42 @@
     <string-array name="monday_conferences_summaries">
         <item>
 		<![CDATA[
-                <p align="justify">Prueba</p>
+                <p align="justify">Acto inaugural de la primera Semana ISW 2013</p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justify"> POR DEFINIR </p>
+            	<p aling="justify"></p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justify"> POR DEFINIR</p>
+            	<p aling="justify"></p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justify"> POR DEFINIR</p>
+            	<p aling="justify"></p>
             ]]>
         </item>
     </string-array>
 
     <array name="monday_conferences_images">
-        <item>@drawable/semana_isw_logo</item>
+        <item>@drawable/semana_isw_logoo</item>
         <item>@drawable/manuel_montanio</item>
-        <item>@drawable/semana_isw_logo</item>
-        <item>@drawable/semana_isw_logo</item>
+        <item>@drawable/logo_itson</item>
+        <item>@drawable/logo_itson</item>
     </array>
 
     <string-array name="tuesday_conferences_names">
-        <item>Redes Sociales</item>
-        <item>Diseño Responsivo</item>
-        <item>POR DEFINIR</item>
+        <item>Geekonomics, la nueva economía</item>
+        <item>Introducción al diseño responsivo </item>
+        <item>Pruebas de usuario efectivas </item>
     </string-array>
     <string-array name="tuesday_conferences_speakers">
         <item>Jorge Pistola</item>
         <item>Axel Valdez</item>
-        <item>POR DEFINIR</item>
+        <item>Diana Arvayo</item>
     </string-array>
     <string-array name="tuesday_conferences_locations">
         <item>Nearsoft</item>
@@ -87,17 +90,17 @@
     <string-array name="tuesday_conferences_summaries">
         <item>
 		<![CDATA[
-                <p align="justify">PORDEFINIR</p>
+                <p align="justify"></p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justify">PORDEFINIR</p>
+            	<p aling="justify"></p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justify">PORDEFINIR</p>
+            	<p aling="justify"></p>
             ]]>
         </item>
     </string-array>
@@ -105,21 +108,21 @@
     <array name="tuesday_conferences_images">
         <item>@drawable/jorge_pistola</item>
         <item>@drawable/axel_valdez</item>
-        <item>@drawable/semana_isw_logo</item>
+        <item>@drawable/nearsoft_logo</item>
     </array>
 
     <string-array name="wednesday_conferences_names">
-        <item>POR DEFINIR</item>
+        <item>Desarrollo ágil de Software y SCRUM distribuido</item>
         <item>Panel de Egresados de ISW</item>
-        <item>POR DEFINIR</item>
+        <item>Computación afectiva y humanos virtuales</item>
     </string-array>
     <string-array name="wednesday_conferences_speakers">
-        <item>POR DEFINIR</item>
-        <item>Moderador: Elsa Padilla</item>
-        <item>Luis Felipe</item>
+        <item>Hector Gutíerrez</item>
+        <item>Egresados ITSON ISW y Moderador: Elsa Padilla</item>
+        <item>Luis Felipe Rodríguez</item>
     </string-array>
     <string-array name="wednesday_conferences_locations">
-        <item>ASPTICS</item>
+        <item>CFE</item>
         <item>Cd. Obregón, Sonora</item>
         <item>ITSON NAÍNARI</item>
     </string-array>
@@ -131,61 +134,165 @@
     <string-array name="wednesday_conferences_summaries">
         <item>
 		<![CDATA[
-                <p align="justify">PORDEFINIR</p>
+                <p align="justify"></p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justify">PORDEFINIR</p>
+            	<p aling="justify"></p>
             ]]>
         </item>
         <item>
 		<![CDATA[
-            	<p aling="justify">PORDEFINIR</p>
+            	<p aling="justify"></p>
             ]]>
         </item>
     </string-array>
 
     <array name="wednesday_conferences_images">
-        <item>@drawable/semana_isw_logo</item>
-        <item>@drawable/semana_isw_logo</item>
-        <item>@drawable/semana_isw_logo</item>
+        <item>@drawable/cfe_logo</item>
+        <item>@drawable/logo_itson</item>
+        <item>@drawable/logo_itson</item>
     </array>
     
     <string-array name="workshops_names">
-        <item>PRUEBA NOMBRES</item>
+        <item>Desarrollo de videojuegos con Blender</item>
+        <item>Desarrollo básico de aplicaciones en Android</item>
+        <item>Desarrollo de aplicaciones con WPF (Windows Presentation Foundation)</item>
+        <item>Desarrollo básico de aplicaciones en Android aplicando base de datos</item>
+        <item>Developing applications with google app engine</item>
+        <item>Desarrollo de Sitios Web con Photoshop CC y Dreamweaver</item>
+        <item>How to build a Web App by the HTML5 way</item>
+        <item>Networking en Acción</item>
+        <item>Desarrollo de aplicaciones para Windows Phone.</item>
     </string-array>
     
     <string-array name="workshops_instructors">
-        <item>PRUEBA INSTRUCTORES</item>
+        <item>Instructores: Benny Franco Dennis, Raúl Calderón Rochín y Laura Márquez Jiménez</item>
+        <item>Instructores: Jesús Alberto Ruíz Rodríguez y Jose Miguel Salcido Aguilar</item>
+        <item>Instructor: Alberto Rubalcaba Velazquez</item>
+        <item>Instructores: Francisco Alán Martínez Méndez y Rodolfo González Durán</item>
+        <item>Instructor: Fernando Martínez Cuevas</item>
+        <item>Instructores: Christian Galvez Javalera y Juan Manuel Bojorquez Sotomayor</item>
+        <item>Instructor: Nearsoft</item>
+        <item>Instructores: Jesús Antonio Gaxiola Meléndrez </item>
+        <item>Instructores: Omar López Chávez</item>
     </string-array>
     
     <string-array name="workshops_requirements">
-        <item>PRUEBA REQUISITOS</item>
+        <item>Capacidad: 25</item>
+        <item>Capacidad: 25</item>
+        <item>Capacidad: 25</item>
+        <item>Capacidad: 25</item>
+        <item>Capacidad: 25</item>
+        <item>Capacidad: 25</item>
+        <item>Capacidad: 25</item>
+        <item>Capacidad: ilimitado</item>
+        <item>Capacidad: 30</item>
     </string-array>
     
     <string-array name="workshops_dates">
-        <item>PRUEBA FECHAS</item>
+        <item>Miercoles 9 de Octubre de 2013</item>
+        <item>Martes 8 de Octubre de 2013</item>
+        <item>Lunes 7 de Octubre de 2013</item>
+        <item>Martes 8 de Octubre de 2013</item>
+        <item>Miercoles 9 de Octubre de 2013</item>
+        <item>Lunes 7 de Octubre de 2013</item>
+        <item>Martes 8 de Octubre de 2013</item>
+        <item>Tutorias</item>
+        <item>Lunes 7 de Octubre de 2013</item>
     </string-array>
     
     <string-array name="workshops_classrooms">
-        <item>PRUEBA SALON DE CLASES</item>
+        <item>LV1011</item>
+        <item>LV1021</item>
+        <item>LV1011</item>
+        <item>LV1012</item>
+        <item>LV1012 y LV1013</item>
+        <item>LV322</item>
+        <item>LV1011 y LV1012</item>
+        <item>TUTORIAS</item>
+        <item>LV1022</item>
     </string-array>
     
     <string-array name="workshops_summaries">
         <item>
             <![CDATA[
-            	<p aling="justify">PRUEBA SUMMARY</p>
+            	<p aling="justify">Desarrollo básico de un videojuego utilizando el Blender Engine, el objetivo es dar las bases para crear un videojuego simple.</p>
+            ]]>
+        </item>
+        
+        <item>
+            <![CDATA[
+            	<p aling="justify">Introduccion al desarrollo en Android (nivel basico), se pretende proporcionar los conocimientos fundamentales del sistema operativo Android para iniciarse en el desarrollo.</p>
+            ]]>
+        </item>
+        
+        <item>
+            <![CDATA[
+            	<p aling="justify">Se trataran principios básicos de XAML (eXtensible Application Markup Language) y enlace de datos hacia las vistas de la aplicación.</p>
+            ]]>
+        </item>
+
+        <item>
+            <![CDATA[	
+            	<p aling="justify">Introduccion al desarrollo en Android (nivel basico), se pretende proporcionar los conocimientos fundamentales del sistema operativo Android para iniciarse en el desarrollo.</p>
+            ]]>
+        </item>
+        
+        <item>
+            <![CDATA[
+            	<p aling="justify">Cloud computing with Google App Engine.</p>
+            ]]>
+        </item>
+        
+        <item>
+            <![CDATA[
+            	<p aling="justify">Aprender como pasar un diseño de un sitio web hecho en Photoshop a Dreamweaver CC aplicando reglas CSS.</p>
+            ]]>
+        </item>
+        
+        <item>
+            <![CDATA[
+            	<p aling="justify">Building a web app is a piece of cake, when you know and use the correct tools. In our case, we are going to use a complete framework named KendoUI to build a single page application, that it will consume a web service. Our app will be built with HTML5 and Javascript, and will consume JSON format data.</p>
+            ]]>
+        </item>
+        
+        <item>
+            <![CDATA[
+            	<p aling="justify">Networking en Acción!</p>
+            ]]>
+        </item>
+        
+        <item>
+            <![CDATA[
+            	<p aling="justify">Desarrollar aplicaciones para dispositivos móviles con Visual Studio. Manejar los procesos más actuales en el desarrollo de aplicaciones Mobile. En la actualidad los dispositivos móviles con Windows Phone 7 están presentes a gran escala en todas las empresas.</p>
             ]]>
         </item>
     </string-array>
     
     <string-array name="workshops_durations">
-        <item>PRUEBA DURACION</item>
+        <item>4 Horas</item>
+        <item>3 Horas</item>
+        <item>4 Horas</item>
+        <item>3 Horas</item>
+        <item>3 Horas</item>
+        <item>3 Horas</item>
+        <item>3 Horas</item>
+        <item>3 horas</item>
+        <item>4 Horas</item>
     </string-array>
         
     <array name="workshops_images">
-        <item>@drawable/semana_isw_logo</item>
+        <item>@drawable/blender_logo</item>
+        <item>@drawable/android_kitkat</item>
+        <item>@drawable/wpf_logo</item>
+        <item>@drawable/android_logo</item>
+        <item>@drawable/gae_logo</item>
+        <item>@drawable/www_thing</item>
+        <item>@drawable/html5_logo</item>
+        <item>@drawable/networking</item>
+        <item>@drawable/windowsphone_logo</item>
     </array>
     
     <array name="monday_conferences">

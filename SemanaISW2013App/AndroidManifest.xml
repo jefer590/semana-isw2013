@@ -5,6 +5,10 @@
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     
     <uses-sdk
         android:minSdkVersion="8"
@@ -52,6 +56,43 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="mobi.itson.semanaisw2013app.MainActivity"/>
         </activity>
+
+        <activity 
+            android:name="mobi.itson.semanaisw2013app.AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName="mobi.itson.semanaisw2013app.MainActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.itson.semanaisw2013app.MainActivity"/>
+        </activity>
+        
+        <activity 
+            android:name="mobi.itson.semanaisw2013app.ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:parentActivityName="mobi.itson.semanaisw2013app.MainActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.itson.semanaisw2013app.MainActivity"/>
+        </activity>
+        
+        <activity 
+            android:name="mobi.itson.semanaisw2013app.GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:parentActivityName="mobi.itson.semanaisw2013app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.itson.semanaisw2013app.MainActivity"/>
+        </activity>
+        
+        <activity
+            android:name="mobi.itson.semanaisw2013app.ImagePagerActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="mobi.itson.semanaisw2013app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.itson.semanaisw2013app.MainActivity"/>
+            </activity>
+        
     </application>
 
 </manifest>

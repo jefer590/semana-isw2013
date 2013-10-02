@@ -12,10 +12,10 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
 
-public class WebView_Register_Actvity extends SherlockActivity{
+public class ScheduleActivity extends SherlockActivity{
 
-	private static final String WEBSITE_REGISTER = "http://semana-isw-2013.eventbrite.com/";
-	private WebView webView;
+	private static final String WEBSITE_SCHEDULE = "https://docs.google.com/file/d/0BzP__TYXk0YsY0xmQUdBM2JHbVU";
+	private WebView webview;
 	
 	@SuppressLint("SetJavaScriptEnabled")
 	@Override
@@ -23,24 +23,24 @@ public class WebView_Register_Actvity extends SherlockActivity{
 		super.onCreate(savedInstanceState);
 		setUpActionBar();
 		
-		webView = new WebView(this);
-		webView.getSettings().setJavaScriptEnabled(true);
+		webview = new WebView(this);
+		webview.getSettings().setJavaScriptEnabled(true);
 		
 		final Activity activity = this;
 		
-		webView.setWebViewClient(new WebViewClient(){	
+		webview.setWebViewClient(new WebViewClient(){
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
             }
 		});
 		
-		webView.loadUrl(WEBSITE_REGISTER);
-		setContentView(webView);
+		webview.loadUrl(WEBSITE_SCHEDULE);
+		setContentView(webview);
 	}
 	
 	private void setUpActionBar(){
-		ActionBar actionbar = getSupportActionBar();
-		actionbar.setDisplayHomeAsUpEnabled(true);
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
@@ -62,6 +62,7 @@ public class WebView_Register_Actvity extends SherlockActivity{
 	
 	@Override
 	public void onBackPressed() {
-		Toast.makeText(getApplicationContext(), getText(R.string.back_button_danger), Toast.LENGTH_LONG).show();
+		Toast.makeText(getApplicationContext(), getString(R.string.back_button_danger), Toast.LENGTH_SHORT).show();
 	}
+	
 }
