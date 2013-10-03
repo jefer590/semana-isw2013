@@ -59,9 +59,4 @@ public class WebView_Register_Actvity extends SherlockActivity{
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	@Override
-	public void onBackPressed() {
-		Toast.makeText(getApplicationContext(), getText(R.string.back_button_danger), Toast.LENGTH_LONG).show();
-	}
 }

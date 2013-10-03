@@ -24,12 +24,9 @@ import android.os.Build;
 public class AboutUsActivity extends SherlockActivity{
 
 	private final String[] mUsernames = new String[] {
-			"Jose Salcido;@jmsalcido",
-			"Fernando Cuevas;@fernandocuevass",
-			"Dario Lumbreras;@wetteifer",
-			"Eduardo Garcia;@omaregg",
-			"Emmanuel Padilla;@emmanuelpadilla",
-			"Fernando Alvarez;@jefer590"
+			"Main devs:Fernando Alvarez;@jefer590",
+			"CODIGO2013APP;SourceCode",
+			"Colaborador:Jose Miguel Salcido;@jmsalcido"
 	};
 	
 	@Override
@@ -124,9 +121,9 @@ public class AboutUsActivity extends SherlockActivity{
 		case R.id.about_us_feedback:
 			Intent intent = new Intent(Intent.ACTION_SENDTO);
 			intent.setType("message/rfc822");
-			String uriText = "mailto:" + Uri.encode("jose@itson.mobi") + 
-			          "?subject=" + Uri.encode("[CODIGO2013 APP] - Feedback") + 
-			          "&body=" + Uri.encode("Por favor no seas gacho, hicimos la app en 2 dias.");
+			String uriText = "mailto:" + Uri.encode("masterofer36@gmail.com") + 
+			          "?subject=" + Uri.encode("[SEMANA ISW 2013] - Feedback") + 
+			          "&body=" + Uri.encode("Escribe aqui tu feedback");
 			intent.setData(Uri.parse(uriText));
 			startActivity(Intent.createChooser(intent, "Mandanos un feedback..."));
 		}

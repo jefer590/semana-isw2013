@@ -59,10 +59,4 @@ public class ScheduleActivity extends SherlockActivity{
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	@Override
-	public void onBackPressed() {
-		Toast.makeText(getApplicationContext(), getString(R.string.back_button_danger), Toast.LENGTH_SHORT).show();
-	}
-	
 }

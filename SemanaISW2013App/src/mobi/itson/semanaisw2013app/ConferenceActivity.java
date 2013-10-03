@@ -25,12 +25,6 @@ public class ConferenceActivity extends SherlockFragmentActivity{
 		setUpActionBar();
 	}
 	
-	@Override
-	public void onBackPressed() {
-		//Nothing bro, you can't use back in my app.
-		Toast.makeText(getApplicationContext(), getString(R.string.back_button_danger), Toast.LENGTH_SHORT).show();
-	}
-	
 	@SuppressWarnings("static-access")
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	private void setUpActionBar() {

@@ -41,11 +41,6 @@ public class WorkshopActivity extends SherlockFragmentActivity{
 		
 	}
 	
-	@Override
-	public void onBackPressed() {
-		 Toast.makeText(getApplicationContext(), getString(R.string.back_button_danger), Toast.LENGTH_SHORT).show();
-	}
-	
 	private ArrayList<Workshop> getWorkshops(int dayResource){
 		ArrayList<Workshop> workshops = new ArrayList<Workshop>();
 		Resources res = getResources();
